@@ -1,7 +1,11 @@
 package cursogetafe.dianotaciones.negocio;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import cursogetafe.dianotaciones.persistencia.ClienteDao;
 
+@Service("negocio")
 public class NegocioImpl implements Negocio{
 
 	
@@ -13,7 +17,7 @@ public class NegocioImpl implements Negocio{
 		System.out.println("Constructor por defecto del NegocioImp");
 	}
 	
-	
+	@Autowired
 	public NegocioImpl(ClienteDao cDao) {
 		this.cDao = cDao;
 		System.out.println("Constructor  del NegocioImp(ClienteDao cDao)");

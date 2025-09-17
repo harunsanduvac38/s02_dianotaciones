@@ -12,13 +12,13 @@ public class Test01 {
 		
 		BeanFactory ctx = new ClassPathXmlApplicationContext("a01_ctx.xml");
 		
-		ClienteDao cDao = ctx.getBean("cliente_dao", ClienteDao.class);
+		ClienteDao cDao = ctx.getBean("clienteDao", ClienteDao.class);
 		
 		System.out.println(cDao.findById(75));
 		System.out.println(cDao);
 		System.out.println();
 
-		ClienteDao otro = ctx.getBean("cliente_dao", ClienteDao.class);
+		ClienteDao otro = ctx.getBean("clienteDao", ClienteDao.class);
 		System.out.println(otro.findById(75));
 		System.out.println(otro);
 	}

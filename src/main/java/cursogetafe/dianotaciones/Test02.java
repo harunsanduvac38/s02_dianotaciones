@@ -15,6 +15,8 @@ public class Test02 {
 		Negocio neg = ctx.getBean("negocio", Negocio.class);
 		
 		System.out.println(neg.proceso(78));
+		
+		
 	}
 
 }

@@ -2,7 +2,9 @@ package cursogetafe.dianotaciones.persistencia;
 
 import org.springframework.stereotype.Component;
 
-@Component("clienteDaoImpl")
+//@Component("clienteDaoImpl") nombre por defecto
+//@Component utiliza el nombre por defecto
+@Component("clienteDao")
 public class ClienteDaoImpl implements ClienteDao {
 
 	
