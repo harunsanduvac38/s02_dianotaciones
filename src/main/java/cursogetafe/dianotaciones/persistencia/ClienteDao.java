@@ -1,4 +1,4 @@
-package cursogetafe.dixml.persistencia;
+package cursogetafe.dianotaciones.persistencia;
 
 public interface ClienteDao {
 	

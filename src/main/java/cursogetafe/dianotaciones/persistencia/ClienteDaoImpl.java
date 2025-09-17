@@ -1,5 +1,8 @@
-package cursogetafe.dixml.persistencia;
+package cursogetafe.dianotaciones.persistencia;
 
+import org.springframework.stereotype.Component;
+
+@Component("clienteDaoImpl")
 public class ClienteDaoImpl implements ClienteDao {
 
 	

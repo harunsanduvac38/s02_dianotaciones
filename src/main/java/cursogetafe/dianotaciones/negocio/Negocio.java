@@ -1,4 +1,4 @@
-package cursogetafe.dixml.negocio;
+package cursogetafe.dianotaciones.negocio;
 
 public interface Negocio {
 	

@@ -1,17 +1,17 @@
-package cursogetafe.dixml;
+package cursogetafe.dianotaciones;
 
 import java.io.FileNotFoundException;
-import java.io.FileReader;
+//import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Properties;
+//import java.util.Properties;
 
 import javax.sql.DataSource;
 
-import org.apache.commons.dbcp2.BasicDataSource;
+//import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -31,7 +31,7 @@ public class Test04 {
 		
 		BeanFactory ctx = new ClassPathXmlApplicationContext("a04_ctx.xml");
 		
-		DataSource ds = ctx.getBean("data_source", DataSource.class);
+		DataSource ds = ctx.getBean("datasourceProduccion", DataSource.class);
 		
 		Connection con = ds.getConnection();
 		PreparedStatement ps = con.prepareStatement("select * from productos");

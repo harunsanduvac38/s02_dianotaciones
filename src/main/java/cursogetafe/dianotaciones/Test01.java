@@ -1,9 +1,9 @@
-package cursogetafe.dixml;
+package cursogetafe.dianotaciones;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import cursogetafe.dixml.persistencia.ClienteDao;
+import cursogetafe.dianotaciones.persistencia.ClienteDao;
 
 public class Test01 {
 	

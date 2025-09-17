@@ -1,6 +1,6 @@
-package cursogetafe.dixml.negocio;
+package cursogetafe.dianotaciones.negocio;
 
-import cursogetafe.dixml.persistencia.ClienteDao;
+import cursogetafe.dianotaciones.persistencia.ClienteDao;
 
 public class NegocioImpl implements Negocio{
 
