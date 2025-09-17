@@ -10,6 +10,7 @@ public class NegocioImpl implements Negocio{
 
 	
 //	final private ClienteDao cDao (puede initializar pero hay que dar un valor en un constructor luego borrar el setter);
+	@Autowired
 	private ClienteDao cDao;
 	
 	public NegocioImpl(){
@@ -17,7 +18,7 @@ public class NegocioImpl implements Negocio{
 		System.out.println("Constructor por defecto del NegocioImp");
 	}
 	
-	@Autowired
+	
 	public NegocioImpl(ClienteDao cDao) {
 		this.cDao = cDao;
 		System.out.println("Constructor  del NegocioImp(ClienteDao cDao)");
@@ -28,7 +29,7 @@ public class NegocioImpl implements Negocio{
 		return cDao;
 	}
 
-
+//	@Autowired
 	public void setcDao(ClienteDao cDao) {
 		System.out.println("NegocioImpl, setcDao(...)");
 		this.cDao = cDao;
