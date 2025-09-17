@@ -10,15 +10,24 @@ import javax.sql.DataSource;
 
 //import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
 
+@Component("test")
 public class Test04B {
 	
+//	@Autowired
+//	@Qualifier("datasourceProduccion")
 	private DataSource dataSource;
 	
 	public Test04B() {}
 	
-	public Test04B(DataSource dataSource) {
+	
+//	Si hay un sólo bean compatible con DataSource, lo inyecta
+	@Autowired
+	public Test04B(@Qualifier("datasourceDesarollo") DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
 	
