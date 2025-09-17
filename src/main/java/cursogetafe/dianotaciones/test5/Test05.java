@@ -1,4 +1,4 @@
-package cursogetafe.dianotaciones;
+package cursogetafe.dianotaciones.test5;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,14 +8,18 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
 
+@Component("test5")
 public class Test05 {
 	
 	private DataSource dataSource;
 	
 	public Test05() {}
 	
+	@Autowired
 	public Test05(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
